@@ -17,10 +17,9 @@ let displayList = () => {
 
 let filterItems = (term) => {
     return shoppingList.filter((item) => {
-        return term == item;
+        return item.includes(term);
     })
 }
-
 
 let itemInput = document.getElementById("itemInput");
 let addItemButton = document.getElementById("addItemButton");
